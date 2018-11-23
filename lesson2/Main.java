@@ -30,7 +30,7 @@ public class Main {
         for (int i = 0; i < sarray.length; i++) {
             for (int j = 0; j < sarray[i].length; j++) {
                 try {
-                    result = Integer.parseInt(sarray[i][j]);
+                    result += Integer.parseInt(sarray[i][j]);
                 } catch (NumberFormatException e) {
                     throw new MyArrayDataException(i, j);
                 }
